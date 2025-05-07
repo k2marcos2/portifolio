@@ -61,4 +61,19 @@ body {
     font-size: 0.9rem;
     color: #bbb;
   }
+  .contact-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
   
+  .email-text {
+    font-size: 1rem;
+    color: #ccc;
+  }
