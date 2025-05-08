@@ -77,3 +77,19 @@ body {
     font-size: 1rem;
     color: #ccc;
   }
+  .project-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .project-list button {
+    margin-left: 10px;
+  }
+  
