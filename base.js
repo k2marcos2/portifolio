@@ -26,10 +26,10 @@ const botao = document.querySelector('button');
 function tocarOuParar() {
   if (audio.paused) {
     audio.play();
-    botao.textContent = 'Parar Música';
+    botao.textContent = '🎵';
   } else {
     audio.pause();
-    botao.textContent = 'Tocar Música';
+    botao.textContent = '❌';
   }
 }
 // Mudança de cor da navbar ao rolar a página
