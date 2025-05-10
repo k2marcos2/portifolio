@@ -3,6 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom right, #000000, #2c003e);
   color: #fff;
+  margin-top: 100px; /* espaço para navbar fixa */
 }
 
 .container {
@@ -96,7 +97,7 @@ footer {
   margin-left: 10px;
 }
 
-/* ANIMAÇÃO DE FUNDO OTIMIZADA */
+/* Animação de fundo */
 .wave-grid {
   position: fixed;
   top: 0;
@@ -130,6 +131,7 @@ footer {
     opacity: 1;
   }
 }
+
 #botaoMusica {
   position: fixed;
   top: 10px;
@@ -147,3 +149,51 @@ footer {
   background-color: #7b2cbf;
 }
 
+/* Navbar centralizada e com largura do card */
+.navbar {
+  background-color: #1f1f2e;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(178, 0, 255, 0.3);
+  transition: background-color 0.3s ease-in-out;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+  position: static; /* ou fixed se quiser fixo no topo */
+  top: 20px;
+}
+
+/* Itens da navbar */
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #c792ea7a;
+  transform: translateY(-3px);
+}
+
+.navbar.scrolled {
+  background-color: #391257;
+}
