@@ -19,5 +19,19 @@ function generateWaveGrid() {
   }
 }
 
+
+const audio = document.getElementById('musicaFundo');
+const botao = document.querySelector('button');
+
+function tocarOuParar() {
+  if (audio.paused) {
+    audio.play();
+    botao.textContent = 'Parar Música';
+  } else {
+    audio.pause();
+    botao.textContent = 'Tocar Música';
+  }
+}
+
 window.addEventListener('load', generateWaveGrid);
 window.addEventListener('resize', generateWaveGrid);

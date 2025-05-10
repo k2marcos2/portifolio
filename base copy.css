@@ -130,3 +130,19 @@ footer {
     opacity: 1;
   }
 }
+#botaoMusica {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 10px 15px;
+  background-color: #5a189a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#botaoMusica:hover {
+  background-color: #7b2cbf;
+}
